@@ -3,16 +3,15 @@
 body { 
     font-size: 16px; 
     line-height: 32px;
-    font-family: /* Ubuntu, sans-serif */;
+    font-family: 'courier', monospace, sans-serif;
     color: indianred;
-    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
 }
 
 h1 {
     font-size: 3em;
     color: greenyellow;
-    font-family: 'Roboto Mono', monospace;
-    
+    font-family: 'courier', monospace, sans-serif;
 }
 
 h2 {
@@ -36,7 +35,6 @@ header, main, footer {
     max-width: 500px;
     max-height: 300px;
     background-color: whitesmoke;
-    
 }
 
 header {
@@ -46,7 +44,7 @@ header {
 }
 
 header img {
-    width: 200;
+    width: 200px;
     height: auto;
     float: right;
     position: relative;
@@ -57,5 +55,4 @@ footer {
     padding-top: 10px;
     text-align: center;
     background-color: whitesmoke;
-    
 }
