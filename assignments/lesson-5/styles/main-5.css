@@ -1,9 +1,12 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
+@import url('https://fonts.googleapis.com/css?family=Faster+One|Open+Sans');
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-  font-size: 16px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif, ariel; 
+    background-color: #edf2f4;
   /* Declare the base font-family - from google font api or other */
 }
 
@@ -11,13 +14,42 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
-header {}
-header h1 {}
+header {
+    background-color: #e7e247;
+    margin: 1px;
+    padding: 2px;
+}
+header h1 {
+    font-family: 'Open Sans', sans-serif, ariel;
+    font-size: 27px;
+    font-weight: bold;
+    color: #2b2d42;
+    margin-left: 80px;
+    margin-top: 1px;
+}
 header img {}
-header .subheading {}
+header .subheading {
+    font-family: 'Open Sans', sans-serif, ariel;
+    font-size: 13px;
+    position: relative;
+    top: -20px;
+    left: 60px;
+}
 
-nav {}
-nav button {}
+#logo {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 60px;
+}
+nav {
+    background-color: #7d84b2; 
+}
+nav button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
 nav ul {}
 nav ul li {}
 nav ul li a {}
@@ -25,19 +57,61 @@ nav ul li.active a {}
 nav ul li a:hover {}
 
 main {}
-main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
+main h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+main figure { display: none; }
 main figure img { width: 100%; }
 
 section {}
 
+.forecast {
+    display: none;
+}
+.current {
+    margin: 0 auto;
+    text-align: center;
+}
+.highlow {
+    text-align: center;
+}
+.conditions {
+    text-align: center;
+    clear: both
+}
+aside {
+    text-align: center;
+}
+.town-article {
+    text-align: center;
+}
+.floatRight {
+    float: right;
+    margin-right: 65px;
+}
+.floatLeft {
+    float: left;
+    margin-left: 65px;
+}
+section h3 {
+  padding: 0px;
+}
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: ???; /* fill the page in the small/phone view */
-  margin: ???;
+    width: 95%; /* fill the page in the    small/phone view */
+    margin-left auto;
+    margin-right: auto;
 }
 
-footer {}
-footer aside {}
+footer {
+    background-color: #e7e247;
+}
+footer aside {
+    background-color: #7d84b2;
+}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */

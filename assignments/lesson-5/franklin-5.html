@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <meta name="author" content="Your Name Here">
-    <meta name="description" content="page description placeholder">
+    <title>WeatherMate</title>
+    <meta name="author" content="Alexandra Derby">
+    <meta name="description" content="WeatherMate site for Franklin area weather">
     <!-- external style references in the proper cascading order -->    
     <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
     <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
@@ -16,9 +16,10 @@
 </head>
 <body>
     <header>
-        <img src="images/#" alt="The-site-logo" width="" height="">
-        <h1>Title</h1>
-        <div class="subheading">Site Motto</div>
+        <img src="images/Site%20Logo.png" alt="The-site-logo" id="logo">
+        <h1>WeatherMate</h1>
+        <div class="subheading">Always Available. Always Current.</div>
+        <img src="images/banner-2.jpg" alt="weather-banner-image" width="100%">
     </header>
 
 <!-- site navigation use placeholder references -->
@@ -37,23 +38,23 @@
     <main>
         <h2>The City of Franklin</h2>
         <figure>
-            <img>
+           <img>
         </figure>
         <section>
-            <h3>Weather Summary</h3>    
-            <div class="highlow">
-                <p>High:</p>  
-                <p>Low:</p>  
-            </div>
+            <h3 class="weather-row">Weather Summary</h3>  
             <div class="current">
                 Sunny
                 <picture>
-                <img src="images/#" alt="" width="" height="">
+                    <img src="images/sun-image.png" alt="sun-image" width="40px" class="weather-row">
                 </picture>
-            </div>   
+            </div>  
+            <div class="highlow">
+                <p class="floatLeft">High: 90&deg; F</p>  
+                <p class="floatRight">Low: 66&deg; F</p> 
+            </div> 
             <div class="conditions">
-                <p>Precipitation:</p>  
-                <p>Wind Speed:</p>  
+                <p>Precipitation: 0&percnt;</p>
+                <p>Wind Speed: 5mph SW</p>  
             </div>           
         </section>
 
@@ -94,8 +95,8 @@
         <article>
             <h3>Franklin Breaks Record</h3>	
                 <p class="town-article">
-                <img src="images/#" alt="" width="" height="">
-                short article content placeholder
+                <img src="images/franklin-article-image.jpg" alt="franklin-city-image" width="90%">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula orci eu rhoncus mattis. Maecenas porttitor ex at dignissim eleifend. Proin sit amet dolor non diam consequat elementum.
                 </p>
         </article>		  
 
@@ -103,7 +104,12 @@
 
     <footer>
         <aside>
-            Contact information placeholder
+            WeatherMate Site <br>
+            123 Main St. <br>
+            Franlin, MU 83454 <br>
+            (999) 999-9999 <br>
+            contact@theurl.com
+    
         </aside>
         <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
     </footer>
