@@ -13,7 +13,8 @@ body {
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-    
+    min-width: 732px;
+    max-width: 938px;
 }
 
 header {
@@ -44,6 +45,9 @@ header .subheading {
     top: 12px;
     left: 12px;
     width: 60px;
+}
+.banner-image {
+    max-width: 100%;
 }
 nav {
     background-color: #7d84b2; 
@@ -81,6 +85,9 @@ section {}
 }
 .highlow {
     text-align: center;
+}
+.weather-row {
+    width: 40px;
 }
 .conditions {
     text-align: center;

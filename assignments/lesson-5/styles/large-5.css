@@ -1,8 +1,13 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
   
-  article p.town-article img { width: 29.333%; }
- 
+article p.town-article img { width: 29.333%; }
+    
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    min-width: 1300px;
+    max-width: 1440px;
+}
 body {
     font-size: 20px;
 }
@@ -89,7 +94,7 @@ section h3 { display: none; }
 table, th, td {
     border: 1px solid black;
     text-align: center;    
-    margin-left: 250px;
+    margin: 0 auto;
     font-size: 25px;
 }
 th, td {
@@ -104,9 +109,10 @@ article p {
     margin-right: 300px;
 }
 article p img {
-   position: relative;
+   position: inline-block;
     width: 500px;
     margin-left: 35px;
+    margin-bottom: 10px;
 }
 aside {
     font-size: 20px;
