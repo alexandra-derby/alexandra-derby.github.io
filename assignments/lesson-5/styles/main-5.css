@@ -56,8 +56,8 @@ nav button {
     right: 12px;
 }
 nav ul {}
-nav ul li {}
-nav ul li a {}
+nav ul li { list-style-type: none;}
+nav ul li a { text-decoration: none;}
 nav ul li.active a {}
 nav ul li a:hover {}
 
