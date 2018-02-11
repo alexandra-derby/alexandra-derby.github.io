@@ -1,11 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Faster+One|Open+Sans');
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
   
-  nav button { display:none; }  /* hamburger button does not need to be shown */
-  
-  section.forecast { display: ???; }  /* show the 10-day forecast with the medium view and up */
-  
-  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+* { box-sizing: border-box; }  /* This wildcard applies to all elements ensuring a box layout model */
 
+header, nav, main, footer { width: auto;
+}
+    
+nav button { display:none; }  /* hamburger button does not need to be shown */
+  
+section.forecast { display: ???; }  /* show the 10-day forecast with the medium view and up */
+  
+article p.town-article img { width: 350px; float:right; }  /* responsive images */
+
+body {
+    font-size: 20px;
+}
+.banner-image {
+    display: none;
+}
+header {
+    margin: 10px;
+    padding: 5px;  
+}
+header h1 {
+    font-size: 40px;
+    text-align: center;
+}
+header .subheading {
+    font-family: 'Open Sans', sans-serif, ariel;
+    font-size: 20px;
+    margin-left: 80px;
+}
+#logo {
+    position: absolute;
+    top: 25px;
+    left: 60px;
+    width: 90px;
+}
+nav ul li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+nav a {
+    text-decoration: none;
+    color: #edf2f4;
+    font-weight: bold;
+    
+}
+nav {
+    background-color: #6e6362;
+    padding: .5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    padding-left: 30px;
+}
+main figure { display: block }
+
+main figure img { width: 50%;
+    float: left; }
+
+main h2 {
+    display: inline;
+    float: right;
+    margin-right: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.right-block h3 {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.highlow {
+    margin-right: 25px
+}
+.forecast {
+    padding-top: 1px;
+    display: block;
+    clear: both;
+}
+.right-block {
+    display: block;
+    float: right;
+    line-height: .4;
 }
 
+table, th, td {
+    border: 1px solid black;
+    text-align: center;    
+    margin: auto;
+}
+th, td {
+    padding: 6px;
+}
+article p {
+    display: inline-block;
+    font-size: 15px;
+    clear: both;
+}
+aside {
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+footer {
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 1px;
+}
+}
+        

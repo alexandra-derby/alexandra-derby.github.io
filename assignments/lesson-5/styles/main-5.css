@@ -1,7 +1,8 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 @import url('https://fonts.googleapis.com/css?family=Faster+One|Open+Sans');
 
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* { box-sizing: border-box; }  /* This wildcard applies to all elements ensuring a box layout model */
+
 
 body {
     font-size: 16px;
@@ -12,6 +13,7 @@ body {
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    
 }
 
 header {
@@ -24,8 +26,8 @@ header h1 {
     font-size: 27px;
     font-weight: bold;
     color: #2b2d42;
-    margin-left: 80px;
     margin-top: 1px;
+    text-align: center;
 }
 header img {}
 header .subheading {
@@ -33,7 +35,8 @@ header .subheading {
     font-size: 13px;
     position: relative;
     top: -20px;
-    left: 60px;
+    text-align: center;
+    margin-left: 0px;
 }
 
 #logo {
@@ -64,7 +67,7 @@ main h2 {
 h3 {
     text-align: center;
 }
-main figure { display: none; }
+main figure { display: none }
 main figure img { width: 100%; }
 
 section {}
