@@ -40,24 +40,20 @@ header .subheading {
 }
 nav ul li {
     display: inline;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
+    list-style-type: none;    
 }
 nav a {
     text-decoration: none;
     color: #edf2f4;
     font-weight: bold;
-    
 }
 nav {
     background-color: #6e6362;
     padding: .5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    text-align: center;
     font-size: 18px;
-    padding-left: 30px;
+    margin: 10px;
+
 }
 main figure { display: block }
 
