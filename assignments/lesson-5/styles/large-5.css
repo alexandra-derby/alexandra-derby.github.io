@@ -101,12 +101,8 @@ th, td {
     padding: 10px;
 }
 article p {
-    width: 300p
-    display: inline-block;
-    font-size:25px;
-    clear: both;
-    margin-left: 275px;
-    margin-right: 300px;
+    font-size: 25px;
+    margin: 20px 100px 20px 100px;
 }
 article p img {
    position: inline-block;
