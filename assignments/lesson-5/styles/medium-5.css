@@ -73,13 +73,17 @@ main h2 {
 }
 .weather-row {
     width: 40px;
+    margin-right: 20px;
 }
 .right-block h3 {
-    margin-right: 10px;
+   margin-right: 40px;
     margin-top: 10px;
 }
 .highlow {
-    margin-right: 25px
+    margin-right: 40px
+}
+.conditions {
+    margin-right: 20px;
 }
 .forecast {
     padding-top: 1px;

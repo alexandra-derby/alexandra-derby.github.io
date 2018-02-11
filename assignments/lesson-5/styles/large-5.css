@@ -66,9 +66,10 @@ main h2 {
     margin-right: 500px;
 }
     
-/*.highlow {
-    margin-right: 25px
-}*/
+.highlow {
+    margin-left: 50px;
+
+}
     
 .highlow p {
     display: inline;
