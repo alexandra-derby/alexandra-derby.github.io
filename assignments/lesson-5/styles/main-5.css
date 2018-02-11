@@ -78,8 +78,16 @@ section {}
     display: none;
 }
 .current {
-    margin: 0 auto;
+    margin: 20px;
     text-align: center;
+}
+.current p {
+    display: inline;
+    vertical-align: top;   
+    padding-right: 10px;
+}
+.current img {
+    margin-top: -10px;
 }
 .highlow {
     text-align: center;
@@ -89,7 +97,7 @@ section {}
 }
 .conditions {
     text-align: center;
-    clear: both
+    clear: both;
 }
 aside {
     text-align: center;
@@ -98,12 +106,12 @@ aside {
     text-align: center;
 }
 .floatRight {
-    float: right;
-    margin-right: 65px;
+    display: inline;
+    margin: 20px;
 }
 .floatLeft {
-    float: left;
-    margin-left: 65px;
+    display: inline;
+     margin: 20px;
 }
 section h3 {
   padding: 0px;

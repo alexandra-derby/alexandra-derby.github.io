@@ -12,7 +12,6 @@ header, nav, main, footer {
     
 nav button { display:none; }  /* hamburger button does not need to be shown */
 
-  
 article p.town-article img { width: 350px; float:right; }  /* responsive images */
 
 body {
@@ -32,7 +31,6 @@ header h1 {
 header .subheading {
     font-family: 'Open Sans', sans-serif, ariel;
     font-size: 20px;
-    margin-left: 80px;
 }
 #logo {
     position: absolute;

@@ -65,11 +65,18 @@ main h2 {
     padding: 10px;
     margin-right: 500px;
 }
-.highlow {
+    
+/*.highlow {
     margin-right: 25px
-}
+}*/
+    
+.highlow p {
+    display: inline;
+
+ }
 .forecast {
     padding-top: 1px;
+    padding-bottom: 10px;
     display: block;
     clear: both;
 }
