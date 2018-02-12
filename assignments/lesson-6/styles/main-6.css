@@ -40,12 +40,13 @@ header .subheading {
 
 #logo {
     position: absolute;
-    top: 12px;
-    left: 12px;
-    width: 60px;
+    top: 15px;
+    left: 15px;
+    width: 50px;
 }
 .banner-image {
     max-width: 100%;
+    margin-bottom: -5px;
 }
 nav {
     background-color: #7d84b2; 
@@ -122,12 +123,11 @@ article p.town-article img {  /* This structure refers to img elements that are 
     margin-right: auto;
 }
 
-footer {
-    background-color: #e7e247;
-}
+footer {}
 footer aside {
     background-color: #7d84b2;
+    margin: 
 }
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+footer>p {  background-color: #e7e247;} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
