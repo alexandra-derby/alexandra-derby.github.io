@@ -17,7 +17,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 
 header {
     background-color: #e7e247;
-    margin: 1px;
+    margin: px;
     padding: 2px;
 }
 header h1 {
@@ -123,7 +123,7 @@ article p.town-article img {  /* This structure refers to img elements that are 
 }
 
 footer { 
-    margin: 10px;
+    margin: 5px;
 }
 footer aside {
     background-color: #7d84b2;
