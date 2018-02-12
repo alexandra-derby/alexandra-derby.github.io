@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Faster+One|Open+Sans');
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+* { box-sizing: border-box; }  /* This wildcard applies to all elements ensuring a box layout model */
+
+header, nav, main, footer {
+    width: auto;
+    min-width: 732px;
+    max-width: 938px;
+}
+    
+nav button { display:none; }  /* hamburger button does not need to be shown */
+
+article p.town-article img { width: 350px; float:right; }  /* responsive images */
+
+body {
+    font-size: 20px;
+}
+.banner-image {
+    display: none;
+}
+header {
+    margin: 10px;
+    padding: 5px;  
+}
+header h1 {
+    font-size: 40px;
+    text-align: center;
+}
+header .subheading {
+    font-family: 'Open Sans', sans-serif, ariel;
+    font-size: 20px;
+}
+#logo {
+    position: absolute;
+    top: 25px;
+    left: 60px;
+    width: 90px;
+}
+nav ul li {
+    display: inline;
+    list-style-type: none;    
+}
+nav a {
+    text-decoration: none;
+    color: #edf2f4;
+    font-weight: bold;
+}
+nav {
+    background-color: #6e6362;
+    padding: .5px;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+
+}
+main figure { display: block }
+
+main figure img { width: 50%;
+    float: left; }
+
+main h2 {
+    display: inline;
+    float: right;
+    margin-right: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.weather-row {
+    width: 40px;
+    margin-right: 20px;
+}
+.right-block h3 {
+   margin-right: 40px;
+    margin-top: 10px;
+}
+.highlow {
+    margin-right: 40px
+}
+.conditions {
+    margin-right: 20px;
+}
+.forecast {
+    padding-top: 1px;
+    display: block;
+    clear: both;
+}
+.right-block {
+    display: block;
+    float: right;
+    line-height: .4;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;    
+    margin: auto;
+}
+th, td {
+    padding: 6px;
+}
+article p {
+    display: inline-block;
+    font-size: 15px;
+    clear: both;
+}
+aside {
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+footer {
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 1px;
+}
+}
+        
