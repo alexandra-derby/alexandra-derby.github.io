@@ -122,15 +122,13 @@ article p.town-article img {  /* This structure refers to img elements that are 
     margin-right: auto;
 }
 
-footer {
-    background-color: #e7e247;
+footer { 
+    margin: 10px;
 }
 footer aside {
     background-color: #7d84b2;
 }
-footer>p {
-    font-size: 14px;
-
-} /* This structure refers to p elements that are direct children of the footer element */
+footer>p {  background-color: #e7e247;} /* This structure refers to p elements that are direct children of the footer element */
+ /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
