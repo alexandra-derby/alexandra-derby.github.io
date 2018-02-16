@@ -1,8 +1,6 @@
 @media only screen and (min-width: 64em) {
-  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
     
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+header, nav, main, footer {
     min-width: 1300px;
     max-width: 1440px;
 }
@@ -50,22 +48,17 @@ nav {
     padding-left: 0px;
 }
 main figure { display: none }
-
 main h2 {
     display: inline-block;
     padding: 10px;
     margin-right: 525px;
-}
-    
+}  
 .highlow {
     margin-left: 50px;
-
-}
-    
+} 
 .highlow p {
     display: inline;
-
- }
+}
 .forecast {
     padding-top: 1px;
     padding-bottom: 10px;

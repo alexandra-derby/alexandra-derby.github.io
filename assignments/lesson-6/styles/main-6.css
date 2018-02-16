@@ -1,20 +1,39 @@
-/* This main css file contains the default rules and is geared toward the small/phone view */
+@media only screen and (max-width: 37.5em) {
+.navigation.responsive {
+    position: absolute;
+    margin: 0 0 0 0; 
+    top: 12px;
+    right: 45px;
+}
+.navigation.responsive li {
+    background-color: #e7e247;
+    display: block;
+    width: 100%;
+    border: 1px solid #7d84b2; 
+}
+.navigation.responsive li a {	
+    padding: 5px;
+    text-align: center;
+    display: block;
+    text-decoration:none; 
+    color: #2b2d42;
+    font-weight: bold;
+}
+.navigation.responsive li a:hover { 
+    background-color: #7d84b2; 
+}
+}
+
 @import url('https://fonts.googleapis.com/css?family=Faster+One|Open+Sans');
 
 * { box-sizing: border-box; }  /* This wildcard applies to all elements ensuring a box layout model */
-
 
 body {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif, ariel; 
     background-color: #edf2f4;
-  /* Declare the base font-family - from google font api or other */
 }
-
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-}
-
+header, nav, main, footer {}
 header {
     background-color: #e7e247;
     margin: 1px;
@@ -37,7 +56,6 @@ header .subheading {
     text-align: center;
     margin-left: 0px;
 }
-
 #logo {
     position: absolute;
     top: 15px;
@@ -57,24 +75,22 @@ nav button {
     right: 12px;
 }
 nav ul {}
-nav ul li { list-style-type: none;}
-nav ul li a { text-decoration: none;}
+nav ul li { 
+    list-style: none;
+    display: none;
+}
 nav ul li.active a {}
 nav ul li a:hover {}
-
 main {}
 main h2 {
     text-align: center;
 }
-
 h3 {
     text-align: center;
 }
 main figure { display: none }
 main figure img { width: 100%; }
-
 section {}
-
 .forecast {
     display: none;
 }

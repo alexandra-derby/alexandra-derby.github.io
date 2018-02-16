@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WeatherMate</title>
     <meta name="author" content="Alexandra Derby">
-    <meta name="description" content="WeatherMate site for Franklin area weather">
+    <meta name="description" content="WeatherMate site for Franklin area weather - Home Page">
     <!-- external style references in the proper cascading order -->    
     <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
     <link href="styles/main-6.css" rel="stylesheet">    <!-- default styles - small/phone views -->
@@ -22,14 +22,14 @@
 
 <!-- site navigation use placeholder references -->
     <nav class="fixed-nav-bar">
-        <button onclick="toggleNavMenu()">&#9776;</button>
-        <ul>
-            <li><a href="#">Home</a> | </li>
-            <li class="active"><a href="#">Franklin</a> | </li>
-            <li><a href="#">Greenville</a> | </li>
-            <li><a href="#">Springfield</a> | </li>
-            <li><a href="#">Storm Center</a> | </li>
-            <li><a href="#">Gallery</a></li>
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <ul class="navigation">
+            <li class="pipe"><a href="#" title="Home">Home</a></li>
+            <li class="active pipe"><a href="#" title="Franklin">Franklin</a></li>
+            <li class="pipe"><a href="#" title="Greenville">Greenville</a></li>
+            <li class="pipe"><a href="#" title="Springfield">Springfield</a></li>
+            <li class="pipe"><a href="#" title="Storm Center">Storm Center</a></li>
+            <li><a href="#" title="Gallery"> Gallery</a></li>
         </ul>		
     </nav>
 
@@ -114,7 +114,7 @@
             (999) 999-9999 <br>
             contact@theurl.com
         </aside>
-        <p class="footer-bar">&copy;2017 All Rights Reserved | WeatherMate | <span id="currentdate">Current Date Placeholder</span></p>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | WeatherMate | <span id="currentdate"></span></p>
     </footer>
 
     <script src="scripts/hamburger.js"></script>
