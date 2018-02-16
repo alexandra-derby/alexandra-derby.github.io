@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Faster+One|Open+Sans');
 @media only screen and (max-width: 37.5em) {
 .navigation.responsive {
     position: absolute;
@@ -24,9 +25,7 @@
 }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Faster+One|Open+Sans');
-
-* { box-sizing: border-box; }  /* This wildcard applies to all elements ensuring a box layout model */
+* { box-sizing: border-box; }
 
 body {
     font-size: 16px;
@@ -47,7 +46,6 @@ header h1 {
     margin-top: 1px;
     text-align: center;
 }
-header img {}
 header .subheading {
     font-family: 'Open Sans', sans-serif, ariel;
     font-size: 13px;
@@ -66,9 +64,7 @@ header .subheading {
     max-width: 100%;
     margin-bottom: -5px;
 }
-nav {
-    background-color: #7d84b2; 
-}
+nav { background-color: #7d84b2; }
 nav button {
     position: absolute;
     top: 12px;
@@ -120,9 +116,6 @@ article p.town-article img {
     margin-left: auto;
     margin-right: auto;
 }
-
 footer {margin: 1px;}
 footer aside { background-color: #7d84b2; }
-footer>p {  background-color: #e7e247;} /* This structure refers to p elements that are direct children of the footer element */
-
-/* Other Class Selectors */
+footer>p {  background-color: #e7e247; }
