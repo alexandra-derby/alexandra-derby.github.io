@@ -114,20 +114,15 @@ aside {
     display: inline;
      margin: 20px;
 }
-section h3 {
-  padding: 0px;
-}
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 95%; /* fill the page in the    small/phone view */
+section h3 { padding: 0px; }
+article p.town-article img {  
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-footer {}
-footer aside {
-    background-color: #7d84b2;
-    margin: 
-}
+footer {margin: 1px;}
+footer aside { background-color: #7d84b2; }
 footer>p {  background-color: #e7e247;} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */

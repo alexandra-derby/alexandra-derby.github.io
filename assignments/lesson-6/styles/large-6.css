@@ -1,7 +1,5 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-  
-article p.town-article img { width: 29.333%; }
     
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
@@ -101,10 +99,10 @@ th, td {
 }
 article p {
     font-size: 25px;
-    margin: 20px 100px 20px 100px;
+    margin: 20px 50px 20px 50px;
 }
-article p img {
-    width: 500px;
+article p.town-article img {
+    width: 600px;
     margin-left: 35px;
     margin-bottom: 10px;
 }
