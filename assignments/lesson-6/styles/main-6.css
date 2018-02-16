@@ -82,18 +82,12 @@ nav ul li {
 nav ul li.active a {}
 nav ul li a:hover {}
 main {}
-main h2 {
-    text-align: center;
-}
-h3 {
-    text-align: center;
-}
+main h2 { text-align: center; }
+h3 { text-align: center; }
 main figure { display: none }
 main figure img { width: 100%; }
 section {}
-.forecast {
-    display: none;
-}
+.forecast { display: none; }
 .current {
     margin: 20px;
     text-align: center;
@@ -103,32 +97,22 @@ section {}
     vertical-align: top;   
     padding-right: 10px;
 }
-.current img {
-    margin-top: -10px;
-}
-.highlow {
-    text-align: center;
-}
-.weather-row {
-    width: 40px;
-}
+.current img { margin-top: -10px; }
+.highlow { text-align: center; }
+.weather-row { width: 40px; }
 .conditions {
     text-align: center;
     clear: both;
 }
-aside {
-    text-align: center;
-}
-.town-article {
-    text-align: center;
-}
+aside { text-align: center; }
+.town-article { text-align: center; }
 .floatRight {
     display: inline;
     margin: 20px;
 }
 .floatLeft {
     display: inline;
-     margin: 20px;
+    margin: 20px;
 }
 section h3 { padding: 0px; }
 article p.town-article img {  
