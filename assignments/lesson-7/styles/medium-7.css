@@ -31,13 +31,14 @@ header .subheading {
 }
 #logo {
     position: absolute;
-    top: 25px;
-    left: 60px;
+    top: 20px;
+    left: 40px;
     width: 90px;
 }
 ul {
     display: flex;
     justify-content: center;
+    padding-left: 0;
 }
 nav ul li {
     display: flex;
@@ -146,9 +147,19 @@ footer {
     margin: 10px;
 }
 .grid {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+	margin:0 10px 0 10px;
+	grid-column-gap: 3%;
+	grid-row-gap: 10px;
+    text-align: center;
 }
-.gridimg {
+#gridimg {
     width:100%;
+    
+}
+.gridfig img {
+	height:320px;
+    max-width: 100%;
 }
 }
