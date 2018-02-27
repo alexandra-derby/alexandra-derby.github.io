@@ -61,7 +61,7 @@ header .subheading {
     width: 50px;
 }
 .banner-image {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: -5px;
 }
 nav { background-color: #7d84b2; }
@@ -148,3 +148,4 @@ footer>p {  background-color: #e7e247; }
     display: flex;
     justify-content: center;
 }
+
