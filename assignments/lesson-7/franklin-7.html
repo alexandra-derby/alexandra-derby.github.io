@@ -30,39 +30,42 @@
             <li class="active pipe"><a href="#" title="Franklin">Franklin</a></li>
             <li class="pipe"><a href="#" title="Greenville">Greenville</a></li>
             <li class="pipe"><a href="#" title="Springfield">Springfield</a></li>
-            <li class="pipe lastPipe"><a href="#" title="Storm Center">Storm Center</a></li>
-            <li><a href="/assignments/lesson-7/gallery-7.html" title="Gallery"> Gallery</a></li>
+            <li class="pipe"><a href="#" title="Storm Center">Storm Center</a></li>
+            <li class="lastPipe"><a href="/assignments/lesson-7/gallery-7.html" title="Gallery"> Gallery</a></li>
         </ul>		
     </nav>
 
     <main>
         <h2>The City of Franklin</h2>
-        <figure>
-           <img src="images/park-image-medium.jpg" alt="sunny-park">
-        </figure>
-        <section>
-                <div class="right-block">
-                    <h3>Weather Summary</h3>  
-                    <div class="parent-flex">
-                        <div class="current">
-                            <p>Sunny</p>
-                            <picture>
-                                <img src="images/sun-image.png" alt="sun-image" class="weather-row">
-                            </picture>
-                        </div>  
-                        <div class="highlow">
-                            <p class="floatLeft">High: 90&deg; F   </p>  
-                            <p class="floatRight">Low: 66&deg; F</p> 
-                        </div>
-                    </div> 
-                    <div class="conditions">
-                        <p>Precipitation: 0&percnt;</p>
-                        <p>Wind Speed: 5mph SW</p>
-                        <p>Windchill Temperature: <span id="windchillTemp"></span></p>
-                    </div> 
+        <div class="medium-parent-flex">
+            <figure class="imgflex">
+               <img src="images/park-image-medium.jpg" alt="sunny-park">
+            </figure>
+            <section>
+                <div class="largeFlex">
+                    <div class="right-block">
+                        <h3>Weather Summary</h3>  
+                        <div class="parent-flex">
+                            <div class="current">
+                                <p>Sunny</p>
+                                <picture>
+                                    <img src="images/sun-image.png" alt="sun-image" class="weather-row">
+                                </picture>
+                            </div>  
+                            <div class="highlow">
+                                <p class="floatLeft">High: 90&deg; F   </p>  
+                                <p class="floatRight">Low: 66&deg; F</p> 
+                            </div>
+                        </div> 
+                        <div class="conditions">
+                            <p>Precipitation: 0&percnt;</p>
+                            <p>Wind Speed: 5mph SW</p>
+                            <p>Windchill Temperature: <span id="windchillTemp"></span></p>
+                        </div> 
+                    </div>
                 </div>
-        </section>
-
+            </section>
+        </div>
         <section class="forecast">
             <h3>10 Day Forecast</h3>
             <table>

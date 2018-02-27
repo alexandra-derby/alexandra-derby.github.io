@@ -106,7 +106,6 @@ main h2 {
 }
 #windchillTemp {
     position: relative;
-    top: 15px;
 }
 .forecast {
     padding-top: 1px;
@@ -132,7 +131,7 @@ article p {
     margin: 10px;
 }
 article p.town-article img {
-    width: 50%;
+    width: 75%;
     margin-left: 40px;
 } 
 aside {
