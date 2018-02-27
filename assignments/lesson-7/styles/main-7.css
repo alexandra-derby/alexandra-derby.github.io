@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Faster+One|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Faster+One|Open+Sans'); 
 @media only screen and (max-width: 37.5em) {
 .navigation.responsive {
     position: absolute;
@@ -151,4 +151,3 @@ footer>p {  background-color: #e7e247; }
     display: flex;
     justify-content: center;
 }
-
