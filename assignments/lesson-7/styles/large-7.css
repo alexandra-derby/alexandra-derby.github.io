@@ -114,7 +114,7 @@ footer {
 	grid-row-gap: 2px;
     max-width: 100%;
 }
-.gridbox #gridimg {
+.gridbox .gridimg {
     display:none;
 }
 .gridimg {
