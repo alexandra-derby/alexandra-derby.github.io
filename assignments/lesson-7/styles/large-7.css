@@ -47,6 +47,7 @@ nav {
     text-align: center;
     padding-left: 0px;
 }
+
 main figure { display: none }
 main h2 {
     display: flex;
@@ -116,7 +117,7 @@ footer {
 .gridbox #gridimg {
     display:none;
 }
-#gridimg {
+.gridimg {
     margin:0;
 }
 .gridbox:hover {
@@ -126,7 +127,7 @@ footer {
 .gridbox {
     opacity: .9;
 }
-.gridbox:hover #gridimg {
+.gridbox:hover .gridimg {
     display: block;
 }
 }

@@ -155,7 +155,7 @@ footer {
 	grid-row-gap: 10px;
     text-align: center;
 }
-#gridimg {
+.gridimg {
     width:100%;
     
 }
