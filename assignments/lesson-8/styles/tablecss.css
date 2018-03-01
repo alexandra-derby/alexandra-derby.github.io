@@ -12,10 +12,10 @@ thead {
 table {
     border-collapse: collapse;
     padding: 5px;
-    box-shadow: 5px 5px 10px #e7f0ed;
+    box-shadow: 5px 5px 10px #628ca6;
 }
 table, th, td {
-    border: 1px solid #e7f0ed;
+    border: .5px solid #D3D3D3;
     padding: 6px 7px 6px 7px;
 }
 thead, tfoot {
