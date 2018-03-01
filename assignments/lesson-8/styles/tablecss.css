@@ -2,6 +2,9 @@
     font-family: Ubuntu, sans-serif;
     text-align: center;
 }
+main table {
+    margin: 0 auto;
+}
 thead {
     font-weight: bold;
     font-size: 20px;
@@ -9,10 +12,10 @@ thead {
 table {
     border-collapse: collapse;
     padding: 5px;
-    box-shadow: 5px 5px 10px #628ca6;
+    box-shadow: 5px 5px 10px #e7f0ed;
 }
 table, th, td {
-    border: 1px solid #7fb9c2;
+    border: 1px solid #e7f0ed;
     padding: 6px 7px 6px 7px;
 }
 thead, tfoot {
