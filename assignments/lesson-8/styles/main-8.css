@@ -151,3 +151,7 @@ footer>p {  background-color: #e7e247; }
     display: flex;
     justify-content: center;
 }
+.big-main {
+    max-width: 100%;
+    margin: auto;
+}
