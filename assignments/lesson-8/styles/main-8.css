@@ -160,6 +160,7 @@ form {
 	padding: 3%;
     margin-bottom: 10px;
     margin-top: -25px;
+    max-width: 500px;
 }
 input, textarea, select {
 	background-color: #fff;
@@ -173,8 +174,7 @@ fieldset {
 }
 legend span {
 	font-weight: bold;
-	font-size: 14px;
-	background-color:# ;
+	font-size: 16px;
 }
 fieldset label {
 	display: block;
@@ -182,8 +182,16 @@ fieldset label {
 label {
 	max-width: 80%;
 	margin: auto;
+    padding-bottom: 10px;
+    padding-top: 5px;
 }
 label span {
 	font-weight: bold;
 	display: block;
+}
+.marginAuto {
+    max-width: 80%;
+    margin: auto;
+    font-weight: bold;
+    display: block;
 }

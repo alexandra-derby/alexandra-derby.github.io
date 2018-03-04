@@ -108,7 +108,7 @@ footer {
 }
 .grid {
     display: grid;
-    margin-top: 15px;
+    margin-top: 10px;
     grid-template-columns: 1fr 1fr 1fr;
 	grid-column-gap: 2px;
 	grid-row-gap: 2px;
@@ -129,5 +129,12 @@ footer {
 }
 .gridbox:hover .gridimg {
     display: block;
+}
+form {
+	margin: auto;
+    max-width: 800px;
+}
+label {
+padding-bottom: 15px;
 }
 }

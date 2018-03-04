@@ -69,9 +69,11 @@
 						<option value="Thunderstorm"></option>
 						<option value="Tornado"></option>
 					</datalist>
+                <span class="marginAuto">
                 <label for="rating">Storm Severity Rating (1 to 10)</label>
                     <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                     <span id="ratingvalue">5</span><br>
+                </span>
 				<label>
 					<span>Storm Region: </span>
 					<select name="region">
@@ -81,17 +83,15 @@
                         <option value="Springfield">Springfield</option>
 					</select>
 				</label>
-				<label>
-					<span>User in Danger Level: </span>
+					<span class="marginAuto">User in Danger Level: </span>
 					<label><input type="radio" name="danger-level" value="Yes">Yes</label>
 					<label><input type="radio" name="danger-level" value="Maybe">Maybe</label>
 					<label><input type="radio" name="danger-level" value="No">No</label>
-				</label>
 				<label>
 					<span>Additional Information or Comments: </span>
 					<textarea name="additional" placeholder="Please enter your text here..."></textarea>
 				</label>
-				<input type="submit" value="Submit">
+				<input type="submit" value="Submit" class="marginAuto">
 			</fieldset>
 		</form>
 	</main>
