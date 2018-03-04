@@ -31,45 +31,70 @@
             <li class="lastPipe"><a href="/assignments/lesson-8/gallery-8.html" title="Gallery"> Gallery</a></li>
         </ul>		
     </nav>
-    <main>
-        <form action="" method="post" enctype="multipart/form-data" name="storm-center" id="storm-watch">
-            <fieldset>
-                <legend>Your Information</legend>
-             
-                <label>Full Name:<input name="fullname" type="text" value="" pattern="[a-zA-Z -.]{3,50}" required></label>
-
-                <label>Email:<input name="email" type="email" value="" placeholder="jill@example.com"></label> 
-
-                <label>Phone Number:<input name="phone" type="tel" value="" required></label>
-
-                <label>Zip Code:<input name="zipcode" type="number" value="" required></label>
-            </fieldset>
-            <fieldset>   
-                <legend>Storm Information</legend>
-
-                <label>Storm Date:<input name="storm-date" type="date" value="" required></label>
-
-                <label>Storm Type:<input name="storm-type" type="text" list="storms" value="" required>
-                    <datalist id="storms">
-                        <option value="Flash Flood"></option>
-                        <option value="Hail"></option>
-                        <option value="Hurricane"></option>
-                        <option value="Thunderstorm"></option>
-                        <option value="Tornado"></option>
-                    </datalist>
-                </label>
-
-                <label>Storm Severity:<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-		<span id="ratingvalue">5</span><br></label>
-
-                <label>Storm Region:<input name="fullname" type="text" value="" required></label>
-
-                <label>User in Danger Level:<input name="fullname" type="text" value="" required></label>
-
-                <label>Additional information or comments:<input name="fullname" type="text" value="" required></label>
-            </fieldset>
-        </form>
-    </main>
+   	<main>
+		<form action="thanks.html" method="get" enctype="multipart/form-data" name="stormreport" id="report">
+			<fieldset>
+				<legend><span>Personal Information</span></legend>
+				<label>
+					<span>Full Name: </span>
+					<input name="fullname" type="text" value="" pattern="[a-zA-Z ]{5,99}" required>
+				</label>
+				<label>
+					<span>Email: </span>
+					<input name="email" type="email" value="" placeholder="email@stormcenter.com">
+				</label>
+				<label>
+					<span>Phone: </span>
+					<input name="phone" type="tel" value="" required>
+				</label>
+				<label>
+					<span>Zip Code: </span>
+					<input name="zipcode" type="number" value="" required>
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend><span>Storm Information</span></legend>
+				<label>
+					<span>Storm Date: </span>
+					<input name="date" type="date" value="">
+				</label>
+				<label>
+					<span>Storm Type: </span>
+					<input name="stormtype" list="types">
+				</label>
+					<datalist id="types">
+						<option value="Flashflood"></option>
+						<option value="Hail"></option>
+						<option value="Hurricane"></option>
+						<option value="Thunderstorm"></option>
+						<option value="Tornado"></option>
+					</datalist>
+                <label for="rating">Storm Severity Rating (1 to 10)</label>
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span><br>
+				<label>
+					<span>Storm Region: </span>
+					<select name="region">
+						<option selected disabled>Select Region...
+						<option value="Franklin">Franklin</option>
+						<option value="Greenville">Greenville</option>
+                        <option value="Springfield">Springfield</option>
+					</select>
+				</label>
+				<label>
+					<span>User in Danger Level: </span>
+					<label><input type="radio" name="danger-level" value="Yes">Yes</label>
+					<label><input type="radio" name="danger-level" value="Maybe">Maybe</label>
+					<label><input type="radio" name="danger-level" value="No">No</label>
+				</label>
+				<label>
+					<span>Additional Information or Comments: </span>
+					<textarea name="additional" placeholder="Please enter your text here..."></textarea>
+				</label>
+				<input type="submit" value="Submit">
+			</fieldset>
+		</form>
+	</main>
     <footer>
     <aside>
         WeatherMate Site <br>
