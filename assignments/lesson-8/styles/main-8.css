@@ -189,9 +189,27 @@ label span {
 	font-weight: bold;
 	display: block;
 }
+#ratingvalue {
+	margin-left:10px;
+	display:inline;
+}
+input[type="submit"] {
+  -webkit-appearance: none;
+  border:none;
+}
+.submit {
+	margin-top: 15px;
+	-webkit-border-radius: 60;
+	-moz-border-radius: 60;
+	border-radius: 60px;
+	font-size: 16px;
+	background: #7d84b2;
+	padding: 5px 10px 5px 10px;
+	text-decoration: none;
+	color: #e7e247;
+}
 .marginAuto {
     max-width: 80%;
     margin: auto;
     font-weight: bold;
     display: block;
-}
