@@ -33,27 +33,41 @@
     </nav>
     <main>
         <form action="" method="post" enctype="multipart/form-data" name="storm-center" id="storm-watch">
-            
-            <label>Full Name:<input name="fullname" type="text" value="" pattern="[a-zA-Z -.]{3,50}" required></label>
-            
-            <label>Email:<input name="email" type="email" value="" placeholder="jill@example.com"></label> 
-            
-            <label>Phone Number:<input name="phone" type="tel" value="" required></label>
-            
-            <label>Zip Code:<input name="zipcode" type="number" value="" required></label>
+            <fieldset>
+                <legend>Your Information</legend>
+             
+                <label>Full Name:<input name="fullname" type="text" value="" pattern="[a-zA-Z -.]{3,50}" required></label>
 
-            <label>Storm Date:<input name="storm-date" type="date" value="" pattern="[a-zA-Z -.]{3,50}" required></label>
+                <label>Email:<input name="email" type="email" value="" placeholder="jill@example.com"></label> 
 
-            <label>Storm Type:<input name="fullname" type="text" value="" pattern="[a-zA-Z -.]{3,50}" required></label>
+                <label>Phone Number:<input name="phone" type="tel" value="" required></label>
 
-            <label>Storm Severity:<input name="fullname" type="text" value="" pattern="[a-zA-Z -.]{3,50}" required></label>
+                <label>Zip Code:<input name="zipcode" type="number" value="" required></label>
+            </fieldset>
+            <fieldset>   
+                <legend>Storm Information</legend>
 
-            <label>Storm Region:<input name="fullname" type="text" value="" pattern="[a-zA-Z -.]{3,50}" required></label>
+                <label>Storm Date:<input name="storm-date" type="date" value="" required></label>
 
-            <label>User in Danger Level:<input name="fullname" type="text" value="" pattern="[a-zA-Z -.]{3,50}" required></label>
+                <label>Storm Type:<input name="storm-type" type="text" list="storms" value="" required>
+                    <datalist id="storms">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
 
-            <label>Additional information or comments:<input name="fullname" type="text" value="" pattern="[a-zA-Z -.]{3,50}" required></label>
-            
+                <label>Storm Severity:<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="ratingvalue">5</span><br></label>
+
+                <label>Storm Region:<input name="fullname" type="text" value="" required></label>
+
+                <label>User in Danger Level:<input name="fullname" type="text" value="" required></label>
+
+                <label>Additional information or comments:<input name="fullname" type="text" value="" required></label>
+            </fieldset>
         </form>
     </main>
     <footer>
@@ -70,6 +84,7 @@
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/rating.js"></script>
     
 </body>
 </html>
