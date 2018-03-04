@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeatherMate</title>
+    <meta name="author" content="Alexandra Derby">
+    <meta name="description" content="WeatherMate site for Franklin area weather - Home Page">
+    <!-- external style references in the proper cascading order -->    
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-8.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium-8.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large-8.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+    <header>
+        <img src="images/site-logo.png" alt="The-site-logo" id="logo">
+        <h1>WeatherMate</h1>
+        <div class="subheading">Always Available. Always Current.</div>
+        <img src="images/weather-banner.jpg" alt="weather-banner-image" class="banner-image" sizes="100vw"
+        srcset="images/weather-banner-small.jpg 384w,
+                images/weather-banner.jpg 684w">
+    </header>
+
+<!-- site navigation use placeholder references -->
+    <nav class="fixed-nav-bar">
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <ul class="navigation">
+            <li class="pipe"><a href="/assignments/lesson-8/franklin-8.html" title="Home">Home</a></li>
+            <li class="active pipe"><a href="#" title="Franklin">Franklin</a></li>
+            <li class="pipe"><a href="#" title="Greenville">Greenville</a></li>
+            <li class="pipe"><a href="#" title="Springfield">Springfield</a></li>
+            <li class="pipe"><a href="/assignments/lesson-8/stormcenter-8.html" title="Storm Center">Storm Center</a></li>
+            <li class="lastPipe"><a href="/assignments/lesson-8/gallery-8.html" title="Gallery"> Gallery</a></li>
+        </ul>		
+    </nav>
+
+    <main>
+        <h2>The City of Franklin</h2>
+        <div class="medium-parent-flex">
+            <figure class="imgflex">
+               <img src="images/park-image-medium.jpg" alt="sunny-park">
+            </figure>
+            <section>
+                <div class="largeFlex">
+                    <div class="right-block">
+                        <h3>Weather Summary</h3>  
+                        <div class="parent-flex">
+                            <div class="current">
+                                <p>Sunny</p>
+                                <picture>
+                                    <img src="images/sun-image.png" alt="sun-image" class="weather-row">
+                                </picture>
+                            </div>  
+                            <div class="highlow">
+                                <p class="floatLeft">High: 90&deg; F   </p>  
+                                <p class="floatRight">Low: 66&deg; F</p> 
+                            </div>
+                        </div> 
+                        <div class="conditions">
+                            <p>Precipitation: 0&percnt;</p>
+                            <p>Wind Speed: 5mph SW</p>
+                            <p>Windchill Temperature: <span id="windchillTemp"></span></p>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>  
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h3>Franklin Breaks Record</h3>	
+                    <p class="town-article">
+                        <img src="images/franklin-small.jpg" alt="franklin-city-image" sizes="100vw"
+                        srcset="images/franklin-small.jpg 400w,
+                                images/franklin-medium.jpg 700w,
+                                images/franklin-large.jpg 1500w">
+                                                                                                            
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula orci eu rhoncus mattis. Maecenas porttitor ex at dignissim eleifend. Proin sit amet dolor non diam consequat elementum.Donec vehicula orci eu rhoncus mattis.
+                    </p>
+        </article>		  
+
+    </main>
+
+    <footer>
+        <aside>
+            WeatherMate Site <br>
+            123 Main St. <br>
+            Franlin, MU 83454 <br>
+            (999) 999-9999 <br>
+            contact@theurl.com
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | WeatherMate | <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+</html>
