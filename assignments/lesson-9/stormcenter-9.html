@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeatherMate</title>
+    <meta name="author" content="Alexandra Derby">
+    <meta name="description" content="WeatherMate site for Franklin area weather - Storm Center Page">
+    <!-- external style references in the proper cascading order -->    
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-8.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium-8.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large-8.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+</head>
+<body>
+    <header>
+        <img src="images/site-logo.png" alt="The-site-logo" id="logo">
+        <h1>WeatherMate</h1>
+        <div class="subheading">Always Available. Always Current.</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav class="fixed-nav-bar large-nav">
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <ul class="navigation">
+            <li class="pipe"><a href="#" title="Home">Home</a></li>
+            <li class="pipe"><a href="/assignments/lesson-8/franklin-8.html" title="Franklin">Franklin</a></li>
+            <li class="pipe"><a href="#" title="Greenville">Greenville</a></li>
+            <li class="pipe"><a href="#" title="Springfield">Springfield</a></li>
+            <li class="pipe"><a href="/assignments/lesson-8/stormcenter-8.html" title="Storm Center">Storm Center</a></li>
+            <li class="lastPipe"><a href="/assignments/lesson-8/gallery-8.html" title="Gallery"> Gallery</a></li>
+        </ul>		
+    </nav>
+   	<main>
+        <h1 class="storm-report">Report a Storm</h1>
+		<form action="thanks.html" method="get" enctype="multipart/form-data" name="stormreport" id="report">
+			<fieldset>
+				<legend><span>Personal Information</span></legend>
+				<label>
+					<span>Full Name: </span>
+					<input name="fullname" type="text" value="" pattern="[a-zA-Z ]{5,99}" required>
+				</label>
+				<label>
+					<span>Email: </span>
+					<input name="email" type="email" value="" placeholder="email@stormcenter.com">
+				</label>
+				<label>
+					<span>Phone: </span>
+					<input name="phone" type="tel" value="" required>
+				</label>
+				<label>
+					<span>Zip Code: </span>
+					<input name="zipcode" type="number" value="" required>
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend><span>Storm Information</span></legend>
+				<label>
+					<span>Storm Date: </span>
+					<input name="date" type="date" value="">
+				</label>
+				<label>
+					<span>Storm Type: </span>
+					<input name="stormtype" list="types">
+				</label>
+					<datalist id="types">
+						<option value="Flashflood"></option>
+						<option value="Hail"></option>
+						<option value="Hurricane"></option>
+						<option value="Thunderstorm"></option>
+						<option value="Tornado"></option>
+					</datalist>
+             
+                <label for="rating" class="boldfont">Storm Severity Rating (1 to 10)</label>
+                   <span class="marginAuto">
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span><br>
+                </span>
+				<label>
+					<span>Storm Region: </span>
+					<select name="region">
+						<option selected disabled>Select Region...
+						<option value="Franklin">Franklin</option>
+						<option value="Greenville">Greenville</option>
+                        <option value="Springfield">Springfield</option>
+					</select>
+				</label>
+					<span class="marginAuto">User in Danger Level: </span>
+					<label><input type="radio" name="danger-level" value="Yes">Yes</label>
+					<label><input type="radio" name="danger-level" value="Maybe">Maybe</label>
+					<label><input type="radio" name="danger-level" value="No">No</label>
+				<label>
+					<span>Additional Information or Comments: </span>
+					<textarea name="additional" placeholder="Please enter your text here..."></textarea>
+				</label>
+				<input type="submit" value="Submit" class="marginAuto submit">
+			</fieldset>
+		</form>
+	</main>
+    <footer>
+    <aside>
+        WeatherMate Site <br>
+        123 Main St. <br>
+        Franlin, MU 83454 <br>
+        (999) 999-9999 <br>
+        contact@theurl.com
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | WeatherMate | <span id="currentdate"></span></p>
+    </footer>
+
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/rating.js"></script>
+    
+</body>
+</html>

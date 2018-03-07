@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeatherMate</title>
+    <meta name="author" content="Alexandra Derby">
+    <meta name="description" content="WeatherMate site for Franklin area weather - Thank you page">
+    <!-- external style references in the proper cascading order -->    
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-8.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium-8.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large-8.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+</head>
+<body>
+    <header>
+        <img src="images/site-logo.png" alt="The-site-logo" id="logo">
+        <h1>WeatherMate</h1>
+        <div class="subheading">Always Available. Always Current.</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav class="fixed-nav-bar large-nav">
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <ul class="navigation">
+            <li class="pipe"><a href="/assignments/lesson-8/franklin-8.html" title="Home">Home</a></li>
+            <li class="pipe"><a href="#" title="Franklin">Franklin</a></li>
+            <li class="pipe"><a href="#" title="Greenville">Greenville</a></li>
+            <li class="pipe"><a href="#" title="Springfield">Springfield</a></li>
+            <li class="pipe"><a href="/assignments/lesson-8/stormcenter-8.html" title="Storm Center">Storm Center</a></li>
+            <li class="lastPipe"><a href="/assignments/lesson-8/gallery-8.html" title="Gallery"> Gallery</a></li>
+        </ul>		
+    </nav>
+    <main>
+        <p class="thank-you">Thank you for your submission!</p>
+    </main>
+    <footer>
+        <aside>
+            WeatherMate Site <br>
+            123 Main St. <br>
+            Franlin, MU 83454 <br>
+            (999) 999-9999 <br>
+            contact@theurl.com
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | WeatherMate | <span id="currentdate"></span></p>
+</footer>
+
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    
+</body>
+</html>
