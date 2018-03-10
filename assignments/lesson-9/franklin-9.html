@@ -47,21 +47,22 @@
                         <h3>Weather Summary</h3>  
                         <div class="parent-flex">
                             <div class="current">
-                                <p>Sunny</p>
-                                <picture>
-                                    <img src="images/sun-image.png" alt="sun-image" class="weather-row">
-                                </picture>
+                                <p>Current Temperature: <span id="currenttemp"></span>&deg;F</p>
+                                <br>
                             </div>  
                             <div class="highlow">
-                                <p class="floatLeft">High: 90&deg; F   </p>  
-                                <p class="floatRight">Low: 66&deg; F</p> 
+                                <div class="current">
+                                    <p id="weatherstring"></p>
+                                    <img id="conditionimg" src="#" alt="sunshine" height="70" width="70">
+                                </div>
                             </div>
                         </div> 
                         <div class="conditions">
-                            <p>Precipitation: 0&percnt;</p>
-                            <p>Wind Speed: 5mph SW</p>
-                            <p>Windchill Temperature: <span id="windchillTemp"></span></p>
-                        </div> 
+                           	<p>Precipitation: <span class="mediumbold">0&percnt;</span></p>	
+                            <p>Wind Speed: <span class="mediumbold"><span id="windspeed"></span> mph <span id="winddirection"></span></span></p>	
+                            <p>Wind Chill: <span class="mediumbold"><span id="windchill"></span>&deg;F</span></p>	
+                            <p>Forecast: <span class="mediumbold"><span id="wforecast"></span></span></p>
+                         </div> 
                     </div>
                 </div>
             </section>
@@ -127,7 +128,7 @@
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/wu-weather.js"></script>
 
 </body>
 </html>
