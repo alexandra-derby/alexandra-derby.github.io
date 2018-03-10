@@ -6,7 +6,7 @@ var franklinrainfall = document.getElementById("franklin-rainfall");
 var springfieldmotto = document.getElementById("springfield-motto");
 var springfieldfounded = document.getElementById("springfield-founded");
 var springfieldpopulation = document.getElementById("springfield-population");
-var springfieldrainfall = ("springfield-rainfall");
+var springfieldrainfall = document.getElementById("springfield-rainfall");
 
 var greenvillemotto = document.getElementById("greenville-motto");
 var greenvillefounded = document.getElementById("greenville-founded");
@@ -23,17 +23,16 @@ request.onload = function() {
     var towns = towninfo['towns'];
         franklinmotto.innerHTML = towns[0].motto;
         franklinfounded.innerHTML = towns[0].yearFounded;
-        franklinpopulation.innterHTML = towns[0].currentPopulation;
+        franklinpopulation.innerHTML = towns[0].currentPopulation;
         franklinrainfall.innerHTML = towns[0].averageRainfall;
     
-        sprinfieldmotto.innerHTML = towns[3].motto;
-        springfieldfounded.innerHTML = towns[3].yearFounded;
-        springfieldpop.innerHTML = towns[3].currentPopulation;
-        springfieldrainfall.innerHTML = towns[3].averageRainfall;
-
         greenvillemotto.innerHTML = towns[1].motto;
         greenvillefounded.innerHTML = towns[1].yearFounded;
-        greenvillepop.innerHTML = towns[1].currentPopulation;
+        greenvillepopulation.innerHTML = towns[1].currentPopulation;
         greenvillerainfall.innerHTML = towns[1].averageRainfall;
-
+    
+        springfieldmotto.innerHTML = towns[3].motto;
+        springfieldfounded.innerHTML = towns[3].yearFounded;
+        springfieldpopulation.innerHTML = towns[3].currentPopulation;
+        springfieldrainfall.innerHTML = towns[3].averageRainfall;
 }
