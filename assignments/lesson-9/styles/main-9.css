@@ -82,8 +82,9 @@ main figure { display: none }
 main figure img { width: 100%; }
 .forecast { display: none; }
 .current {
-    margin-top: 4px;
+    margin-top: 2px;
     text-align: center;
+    display: block;
 }
 .current p {
     display: block;
@@ -91,11 +92,16 @@ main figure img { width: 100%; }
     padding-right: 10px;
 }
 .current img { margin-top: -10px; }
-.highlow { text-align: center; }
+.highlow { 
+    text-align: center;
+    display: block;
+    position: absolute;
+    padding: 35px;
+}
 .weather-row { width: 40px; }
 .conditions {
     text-align: center;
-    clear: both;
+    margin-top: 80px;
 }
 aside { text-align: center; }
 .town-article { text-align: center; }
@@ -230,6 +236,7 @@ input[type="submit"] {
     max-width: 100%;
 }
 .article-flex img {
-    max-height: 250px;
+    max-height: 200px;
 
 }
+highlow
