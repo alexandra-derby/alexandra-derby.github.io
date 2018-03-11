@@ -158,7 +158,6 @@ label {
  .all-grid {
     display: grid;
 }
-
 .large-line-flex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
