@@ -163,4 +163,14 @@ footer {
 	height:320px;
     max-width: 100%;
 }
+.article-flex {
+    display: flex;
+}
+.reverse-flex {
+    flex-direction: row-reverse
+    
+}
+.article-flex p {
+    min-width: 348px;
+}
 }
