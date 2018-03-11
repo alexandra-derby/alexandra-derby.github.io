@@ -101,7 +101,7 @@ main figure img { width: 100%; }
 .weather-row { width: 40px; }
 .conditions {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 89px;
 }
 aside { text-align: center; }
 .town-article { text-align: center; }
@@ -237,4 +237,10 @@ input[type="submit"] {
 }
 .article-flex img {
     max-height: 200px;
+}
+form {
+	margin: auto;
+}
+.bottom-padding {
+    margin-bottom: 10px;
 }

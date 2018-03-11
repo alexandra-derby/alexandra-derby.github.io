@@ -136,13 +136,12 @@ form {
     max-width: 800px;
 }
 label {
-padding-bottom: 15px;
+    padding-bottom: 15px;
     padding-top: 5px;
 }
 .large-one {
     display: flex; 
     justify-content: center;
-    
 }
 .large-parent-flex {
     display: flex;
@@ -152,5 +151,19 @@ padding-bottom: 15px;
 }
 .conditions {
     margin-top: 100px;
+}
+.first-story img {
+    max-height: 300px;
+}
+ .all-grid {
+    display: grid;
+}
+
+.large-line-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+main h2 {
+    padding-left: 0;
 }
 }
