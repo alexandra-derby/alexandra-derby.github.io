@@ -6,8 +6,8 @@ var conditionimg = document.getElementById("conditionimg");
 var windchill = document.getElementById("windchill");
 var wforecast = document.getElementById("wforecast");
 
-var conditionsrequestURL = 'http://api.wunderground.com/api/69a7489872d284ac/conditions/q/MN/Franklin.json';
-var forecastrequestURL = 'http://api.wunderground.com/api/69a7489872d284ac/forecast/q/MN/Franklin.json';
+var conditionsrequestURL = 'https://api.wunderground.com/api/69a7489872d284ac/conditions/q/MN/Franklin.json';
+var forecastrequestURL = 'https://api.wunderground.com/api/69a7489872d284ac/forecast/q/MN/Franklin.json';
 
 var conditionsrequest = new XMLHttpRequest();
 conditionsrequest.open('GET', conditionsrequestURL);
