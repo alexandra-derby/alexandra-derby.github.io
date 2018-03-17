@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Faster+One|Open+Sans'); 
+@media only screen and (max-width: 37.5em) {
+.navigation.responsive {
+    position: absolute;
+    margin: 0 0 0 0; 
+    top: 12px;
+    right: 45px;
+}
+.navigation.responsive li {
+    background-color: #e7e247;
+    display: block;
+    width: 100%;
+    border: 1px solid #7d84b2; 
+}
+.navigation.responsive li a {	
+    padding: 5px;
+    text-align: center;
+    display: block;
+    text-decoration: none; 
+    color: #2b2d42;
+    font-weight: bold;
+}
+.navigation.responsive li a:hover { 
+    background-color: #7d84b2; 
+}
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif, ariel; 
+    background-color: #edf2f4;
+}
+header, nav, main, footer {
+    margin: 1px 5px 1px 5px;
+}
+header {
+    background-color: #e7e247;
+    margin: 1px;
+    padding: 2px;
+}
+header h1 {
+    font-family: 'Open Sans', sans-serif, ariel;
+    font-size: 27px;
+    font-weight: bold;
+    color: #2b2d42;
+    margin-top: 1px;
+    text-align: center;
+}
+header .subheading {
+    font-family: 'Open Sans', sans-serif, ariel;
+    font-size: 13px;
+    position: relative;
+    top: -20px;
+    text-align: center;
+    margin-left: 0px;
+}
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+}
+.banner-image {
+    width: 100%;
+    margin-bottom: -5px;
+}
+nav { background-color: #7d84b2; }
+nav button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+nav ul li { 
+    list-style: none;
+    display: none;
+}
+main h2 { text-align: center; }
+h3 { text-align: center; }
+main figure { display: none }
+main figure img { width: 100%; }
+.forecast { display: none; }
+.current {
+    margin-top: 2px;
+    text-align: center;
+    display: block;
+}
+.current p {
+    display: block;
+    vertical-align: top;   
+    padding-right: 10px;
+}
+.current img { margin-top: -10px; }
+.highlow { 
+    text-align: center;
+    display: block;
+    position: absolute;
+    padding: 35px;
+}
+.weather-row { width: 40px; }
+.conditions {
+    text-align: center;
+    margin-top: 89px;
+}
+aside { text-align: center; }
+.town-article { text-align: center; }
+.floatRight {
+    display: block;
+    margin: 20px;
+}
+.floatLeft {
+    display: block;
+    margin: 20px;
+}
+section h3 { padding: 0px; }
+article p.town-article img {  
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {margin: 1px; font-size: 12px; text-align: center;}
+footer aside { background-color: #7d84b2; }
+footer>p {  background-color: #e7e247; }
+.grid {
+	margin:0 5px 0 5px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: 3%;
+	grid-row-gap: 10px;
+    text-align: center;
+}
+.gridimg {
+	width: 100%;
+	height: 50%;
+    text-align: center;
+}
+.gridfig {
+	margin: 0 1px 0 1px;
+    max-width: 100%;
+    height: auto;
+}
+.gridfig img {
+	height:220px;
+    max-width: 100%;
+}
+.large-nav {
+    top: 0;   
+}
+.parent-flex {
+    display: flex;
+    justify-content: center;
+}
+.big-main {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+form {
+	padding: 3%;
+    margin-bottom: 10px;
+    margin-top: -25px;
+    max-width: 500px;
+}
+input, textarea, select {
+	background-color: #fff;
+}
+form, fieldset, label, label span {
+	text-align: left;
+}
+fieldset {
+	margin: 20px 5% 0 5%;
+    background-color: #e7e247;
+    font-size: 16px;
+}
+legend span {
+	font-weight: bold;
+	font-size: 13px;
+}
+fieldset label {
+	display: block;
+}
+label {
+	max-width: 80%;
+	margin: auto;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+label span {
+	font-weight: bold;
+	display: block;
+}
+#ratingvalue {
+	margin-left: 10px;
+	display: inline;
+}
+input[type="submit"] {
+  -webkit-appearance: none;
+  border:none;
+}
+.submit {
+	margin-top: 15px;
+	-webkit-border-radius: 60;
+	-moz-border-radius: 60;
+	border-radius: 60px;
+	font-size: 16px;
+	background: #7d84b2;
+	padding: 5px 10px 5px 10px;
+	text-decoration: none;
+	color: #e7e247;
+}
+.marginAuto {
+    max-width: 80%;
+    margin: auto;
+    font-weight: bold;
+    display: block;
+}
+.boldfont {
+    font-weight: bold;
+}
+.storm-report {
+    text-align: center;
+    margin-bottom: -25px;
+}
+.thank-you {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 300px;
+    margin-top: 50px;
+}
+.article-flex {
+    display: block;
+    text-align: center;
+    max-width: 100%;
+}
+.article-flex img {
+    max-height: 200px;
+}
+form {
+	margin: auto;
+}
+.bottom-padding {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeatherMate</title>
+    <meta name="author" content="Alexandra Derby">
+    <meta name="description" content="WeatherMate site for Franklin area weather - Franklin Page">
+    <!-- external style references in the proper cascading order -->    
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-10.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium-10.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large-10.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+    <header>
+        <img src="images/site-logo.png" alt="The-site-logo" id="logo">
+        <h1>WeatherMate</h1>
+        <div class="subheading">Always Available. Always Current.</div>
+        <img src="images/weather-banner.jpg" alt="weather-banner-image" class="banner-image" sizes="100vw"
+        srcset="images/weather-banner-small.jpg 384w,
+                images/weather-banner.jpg 684w">
+    </header>
+
+<!-- site navigation use placeholder references -->
+    <nav class="fixed-nav-bar">
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <ul class="navigation">
+            <li class="pipe"><a href="/assignments/lesson-10/index-10.html" title="Home">Home</a></li>
+            <li class="pipe"><a href="/assignments/lesson-10/franklin-10.html" title="Franklin">Franklin</a></li>
+            <li class="active pipe"><a href="/assignments/lesson-10/greenville.html" title="Greenville">Greenville</a></li>
+            <li class="pipe"><a href="/assignments/lesson-10/springfield.html" title="Springfield">Springfield</a></li>
+            <li class="pipe"><a href="/assignments/lesson-10/stormcenter-10.html" title="Storm Center">Storm Center</a></li>
+            <li class="lastPipe"><a href="/assignments/lesson-10/gallery-10.html" title="Gallery"> Gallery</a></li>
+        </ul>		
+    </nav>
+
+    <main>
+        <h2>The City of Greenville</h2>
+        <div class="medium-parent-flex">
+            <figure class="imgflex">
+               <img src="images/awesome-weather.jpg" alt="wet-grass">
+            </figure>
+            <section>
+                <div class="largeFlex">
+                    <div class="right-block">
+                        <h3 class="center-h3">Weather Summary</h3>  
+                        <div class="parent-flex">
+                            <div class="current">
+                                <p>Current Temperature: <span id="currenttemp"></span>&deg;F</p>
+ 
+                            </div>  
+                            <div class="highlow">
+                                <div class="current">
+                                    <p id="weatherstring"></p>
+                                    <img id="conditionimg" src="#" alt="sunshine" height="70" width="70">
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="conditions">
+                           	<p>Precipitation: <span class="mediumbold">0&percnt;</span></p>	
+                            <p>Wind Speed: <span class="mediumbold"><span id="windspeed"></span> mph <span id="winddirection"></span></span></p>	
+                            <p>Wind Chill: <span class="mediumbold"><span id="windchill"></span>&deg;F</span></p>	
+                            <p>Forecast: <span class="mediumbold"><span id="wforecast"></span></span></p>
+                         </div> 
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>  
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h3>Greenville's Top Story</h3>	
+                <div class="stop-flex">
+                    <p class="town-article">
+                        <img src="images/crazy-weather.jpg" alt="intense-weather">
+                                                                                                            
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula orci eu rhoncus mattis. Maecenas porttitor ex at dignissim eleifend. Proin sit amet dolor non diam consequat elementum.Donec vehicula orci eu rhoncus mattis.
+                    </p>
+                </div>
+        </article>		  
+
+    </main>
+
+    <footer>
+        <aside>
+            WeatherMate Site <br>
+            123 Main St. <br>
+            Franlin, MU 83454 <br>
+            (999) 999-9999 <br>
+            contact@theurl.com
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | WeatherMate | <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/wu-weather.js"></script>
+
+</body>
+</html>

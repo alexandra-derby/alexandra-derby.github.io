@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeatherMate</title>
+    <meta name="author" content="Alexandra Derby">
+    <meta name="description" content="WeatherMate site for Franklin area weather - Index Page">
+    <!-- external style references in the proper cascading order -->    
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-10.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium-10.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large-10.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+</head>
+<body>
+    <header>
+        <img src="images/site-logo.png" alt="The-site-logo" id="logo">
+        <h1>WeatherMate</h1>
+        <div class="subheading">Always Available. Always Current.</div>
+    </header>
+    <nav class="fixed-nav-bar large-nav">
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <ul class="navigation">
+            <li class="active pipe"><a href="/assignments/lesson-10/index-10.html" title="Home">Home</a></li>
+            <li class="pipe"><a href="/assignments/lesson-10/franklin-10.html" title="Franklin">Franklin</a></li>
+            <li class="pipe"><a href="/assignments/lesson-10/greenville.html" title="Greenville">Greenville</a></li>
+            <li class="pipe"><a href="/assignments/lesson-10/springfield.html" title="Springfield">Springfield</a></li>
+            <li class="pipe"><a href="/assignments/lesson-10/stormcenter-10.html" title="Storm Center">Storm Center</a></li>
+            <li class="lastPipe"><a href="/assignments/lesson-10/gallery-10.html" title="Gallery"> Gallery</a></li>
+        </ul>		
+    </nav>
+    <main>
+        <article class="article-flex first-story">
+            <div>
+                <h2>Weather Story</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla euismod nulla et sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
+            </div>
+            <div>
+                <img src="/assignments/lesson-9/images/cold-weather.jpg" alt="home-page-weather-story" class="article-img">
+            </div>
+        </article>
+        <div class="large-line-flex">
+            <article class="article-flex reverse-flex all-grid">
+                <div>
+                    <h2>Franklin</h2>
+                    <p>Motto: <span class="json-display" id="franklin-motto"></span></p>
+                    <p>Year Founded: <span class="json-display" id="franklin-founded"></span></p>
+                    <p>Population: <span class="json-display" id="franklin-population"></span></p>
+                    <p>Annual Rainfall: <span class="json-display" id="franklin-rainfall"></span></p>
+                </div>
+                <div>
+                    <img src="/assignments/lesson-9/images/city-cold-snow.jpg" alt="home-page-weather-story" class="article-img large-img-flex">
+                </div>
+             </article>
+             <article class="article-flex all-grid">
+                 <div>
+                    <h2>Springfield</h2>
+                    <p>Motto: <span class="json-display" id="springfield-motto"></span></p>
+                    <p>Year Founded: <span class="json-display" id="springfield-founded"></span></p>
+                    <p>Population: <span class="json-display" id="springfield-population"></span></p>
+                    <p>Annual Rainfall: <span class="json-display" id="springfield-rainfall"></span></p>
+                 </div>
+                 <div>
+                    <img src="/assignments/lesson-9/images/cold-snow-image.jpg" alt="home-page-weather-story" class="article-img large-img-flex">
+                 </div>
+            </article>
+            <article class="article-flex reverse-flex all-grid">
+                <div>
+                    <h2>Greenville</h2>
+                    <p>Motto: <span class="json-display" id="greenville-motto"></span></p>
+                    <p>Year Founded: <span class="json-display" id="greenville-founded"></span></p>
+                    <p>Population: <span class="json-display" id="greenville-population"></span></p>
+                    <p>Annual Rainfall: <span class="json-display" id="greenville-rainfall"></span></p>
+                </div>
+                <div class="bottom-padding">
+                    <img src="/assignments/lesson-9/images/city-forest-cold.jpg" alt="home-page-weather-story" class="article-img large-img-flex">
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <aside>
+            WeatherMate Site <br>
+            123 Main St. <br>
+            Franlin, MU 83454 <br>
+            (999) 999-9999 <br>
+            contact@theurl.com
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | WeatherMate | <span id="currentdate"></span></p>
+    </footer>
+
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/loadinfo.js"></script>
+    
+</body>
+</html>
