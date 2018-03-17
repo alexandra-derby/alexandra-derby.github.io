@@ -5,9 +5,32 @@ var winddirection = document.getElementById("winddirection");
 var conditionimg = document.getElementById("conditionimg");
 var windchill = document.getElementById("windchill");
 var wforecast = document.getElementById("wforecast");
+var conditionsrequestURL = checkConditionsURL();
+var forecastrequestURL = checkForecastURL();
 
-var conditionsrequestURL = 'https://api.wunderground.com/api/69a7489872d284ac/conditions/q/MN/Franklin.json';
-var forecastrequestURL = 'https://api.wunderground.com/api/69a7489872d284ac/forecast/q/MN/Franklin.json';
+
+function checkConditionsURL(){
+	if(window.location.href === 'https://alexandra-derby.github.io/assignments/lesson-10/franklin-10.html'){
+		return '//api.wunderground.com/api/69a7489872d284ac/conditions/q/MN/Franklin.json';
+	}
+	if(window.location.href === 'https://alexandra-derby.github.io/assignments/lesson-10/greenville.html'){
+		return '//api.wunderground.com/api/69a7489872d284ac/conditions/q/TX/Greenville.json';
+	}
+	if(window.location.href === 'https://alexandra-derby.github.io/assignments/lesson-10/springfield.html'){
+		return '//api.wunderground.com/api/69a7489872d284ac/conditions/q/OR/Springfield.json';
+	}
+}
+function checkForecastURL(){
+	if(window.location.href === 'https://alexandra-derby.github.io/assignments/lesson-10/franklin-10.html'){
+		return '//api.wunderground.com/api/69a7489872d284ac/forecast/q/MN/Franklin.json';
+	}
+	if(window.location.href === 'https://alexandra-derby.github.io/assignments/lesson-10/greenville.html'){
+		return '//api.wunderground.com/api/69a7489872d284ac/forecast/q/TX/Greenville.json';
+	}
+	if(window.location.href === 'https://alexandra-derby.github.io/assignments/lesson-10/springfield.html'){
+		return '//api.wunderground.com/api/69a7489872d284ac/forecast/q/OR/Springfield.json';
+	}
+}
 
 var conditionsrequest = new XMLHttpRequest();
 conditionsrequest.open('GET', conditionsrequestURL);
