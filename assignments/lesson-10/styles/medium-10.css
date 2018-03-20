@@ -15,7 +15,7 @@ body {
     font-size: 20px;
 }
  li a:visited {
- color: #e7e247;
+ color: #edf2f4;
     
     border: 1px solid #7d84b2; 
 }
@@ -29,6 +29,9 @@ li a {
 }
 li a:hover { 
     background-color: #7d84b2; 
+}
+.active a {
+    color: aliceblue;
 }
 .banner-image {
     display: none;
