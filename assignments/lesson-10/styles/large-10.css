@@ -1,8 +1,8 @@
 @media only screen and (min-width: 64em) {
     
-header, nav, main, footer {
+header, nav, main, footer, body {
     min-width: 1300px;
-    max-width: 1440px;
+    max-width: 2560px;
 }
 body {
     font-size: 20px;
