@@ -14,23 +14,12 @@ nav button { display:none; }  /* hamburger button does not need to be shown */
 body {
     font-size: 20px;
 }
- li a:visited {
- color: #2b2d42;
-    border: 1px solid #7d84b2; 
-}
-li a {	
-    padding: 5px;
-    text-align: center;
-    display: block;
-    text-decoration: none; 
-    color: #2b2d42;
-    font-weight: bold;
-}
 li a:hover { 
     background-color: #7d84b2; 
 }
 .active a {
    text-decoration: underline;
+    color: #7d84b2;
 }
 .banner-image {
     display: none;
