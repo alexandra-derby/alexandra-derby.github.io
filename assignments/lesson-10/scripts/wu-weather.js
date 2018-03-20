@@ -3,7 +3,6 @@ var currenttemp = document.getElementById("currenttemp");
 var windspeed = document.getElementById("windspeed");
 var winddirection = document.getElementById("winddirection");
 var conditionimg = document.getElementById("conditionimg");
-var windchill = document.getElementById("windchill");
 var wforecast = document.getElementById("wforecast");
 var conditionsrequestURL = checkConditionsURL();
 var forecastrequestURL = checkForecastURL();
@@ -43,7 +42,6 @@ conditionsrequest.onload = function() {
 	currenttemp.innerHTML = weather.temp_f;
 	windspeed.innerHTML = weather.wind_mph;
 	winddirection.innerHTML = weather.wind_dir;
-	windchill.innerHTML = weather.windchill_f;
 	conditionimg.src = weather.icon_url;
 }
 	
