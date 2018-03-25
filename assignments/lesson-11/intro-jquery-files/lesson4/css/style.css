@@ -15,7 +15,7 @@ html,body {
 }
 
 body {
-	background:url('../images/congruent_pentagon.png');
+	background:url('/assignments/lesson-11/intro-jquery-files/lesson4/images/congruent_pentagon.png');
 }
 
 .container {
@@ -87,7 +87,7 @@ main {
 	left:20px;
 	width:600px;
 	height:250px;
-	background:url('../images/head_image.jpg');
+	background:url('/assignments/lesson-11/intro-jquery-files/lesson4/images/head_image.jpg');
 	border-radius:5px;
 }
 
