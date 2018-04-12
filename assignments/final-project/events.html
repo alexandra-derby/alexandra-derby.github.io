@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Screamin' Cycle</title>
+    <meta name="author" content="Alexandra Derby">
+    <meta name="description" content="The Mountain Spoke Events Page">    
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/final-main.css" rel="stylesheet">
+    <link href="styles/final-medium.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="The-site-logo" id="logo">
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">Faster than the Rest.</div>
+    </header>
+    <nav class="fixed-nav-bar large-nav">
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <ul class="navigation">
+            <li class="togglenav pipe"><a href="index.html" title="Home">Home</a></li>
+            <li class="togglenav pipe"><a href="tours.html" title="Adventures">Adventure Tours</a></li>
+            <li class="togglenav pipe"><a href="events.html" title="Events">Events</a></li>
+            <li class="togglenav pipe"><a href="sales.html" title="Sales">Sales</a></li>
+            <li class="togglenav pipe"><a href="services.html" title="Services">Services</a></li>
+            <li class="togglenav lastPipe"><a href="contact.html" title="Contact"> Contact</a></li>
+        </ul>		
+    </nav>
+    <main>
+        <article>
+            <h2>Cycle the Continental Divide!</h2>
+            <p>The Great Divide Mountain Bike Route (GDMBR) is the most recognized and important off-pavement cycling route in the United States, if not the world. During this years event you will crisscross the Continental Divide from north to south starting in Banff, Alberta, Canada and finishing at the US/Mexico border in Antelope Wells, New Mexico. Join us for this years special event tour! Sign up below.</p>
+            <img src="images/great-divide.jpg">
+        
+            <h1 class="registration">2018 Registration</h1>
+		<form action="thanks.html" method="get" enctype="multipart/form-data" name="registration" id="report">
+			<fieldset>
+				<label>
+					<span>Full Name: </span>
+					<input name="fullname" type="text" value="" pattern="[a-zA-Z ]{5,99}" required>
+				</label>
+				<label>
+					<span>Email: </span>
+					<input name="email" type="email" value="" placeholder="email@themountainspoke.com">
+				</label>
+				<label>
+					<span>Phone: </span>
+					<input name="phone" type="tel" value="" required>
+				</label>
+				<label>
+					<span>Home State: </span>
+					<input name="state" type="text" value="" required>
+				</label>
+                <label>
+					<span>Special Accomodations/Comments: </span>
+					<textarea name="additional" placeholder="Please enter your text here..."></textarea>
+				</label>
+                <input type="submit" value="Submit" class="marginAuto submit">
+            </fieldset>
+		</form>
+            
+        
+        </article>
+    </main>
+    <footer>
+        <aside>
+            The Mountain Spoke <br>
+            3950 Valley Commons Drive<br>
+            Bozeman, MT 83454 <br>
+            (406) 409-2273 <br>
+            contact@mountainspoke.com
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span> | <a href="resources.html">Resources</a></p>
+    </footer>
+
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/current-date.js"></script>
+
+    
+</body>
+</html>

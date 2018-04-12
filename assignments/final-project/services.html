@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Screamin' Cycle</title>
+    <meta name="author" content="Alexandra Derby">
+    <meta name="description" content="The Mountain Spoke Adventures and Tours Page">    
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/final-main.css" rel="stylesheet">
+    <link href="styles/final-medium.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="The-site-logo" id="logo">
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">Faster than the Rest.</div>
+    </header>
+    <nav class="fixed-nav-bar large-nav">
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <ul class="navigation">
+            <li class="togglenav pipe"><a href="index.html" title="Home">Home</a></li>
+            <li class="togglenav pipe"><a href="tours.html" title="Adventures">Adventure Tours</a></li>
+            <li class="togglenav pipe"><a href="events.html" title="Events">Events</a></li>
+            <li class="togglenav pipe"><a href="sales.html" title="Sales">Sales</a></li>
+            <li class="togglenav pipe"><a href="services.html" title="Services">Services</a></li>
+            <li class="togglenav lastPipe"><a href="contact.html" title="Contact"> Contact</a></li>
+        </ul>		
+    </nav>
+    <main>
+        <article>
+            <h2>Bike Repair Services:</h2>
+            <table>
+              <tr>
+                <td><span class="json-display" id="service1"></span></td>
+                  <td><span class="json-display" id="price1"><br></span></td>
+              </tr>
+              <tr>
+                  <td><span class="json-display" id="service2"></span></td>
+                  <td><span class="json-display" id="price2"></span></td>
+              </tr>
+              <tr>
+                  <td><span class="json-display" id="service3"></span></td>
+                  <td><span class="json-display" id="price3"></span></td>
+              </tr>
+              <tr>
+                  <td><span class="json-display" id="service4"></span></td>
+                  <td><span class="json-display" id="price4"></span></td>
+              </tr>
+              <tr>
+                  <td><span class="json-display" id="service5"></span></td>
+                  <td><span class="json-display" id="price5"></span></td>
+              </tr>
+              <tr>
+                  <td><span class="json-display" id="service6"></span></td>
+                  <td><span class="json-display" id="price6"></span></td>
+              </tr>
+              <tr>
+                  <td><span class="json-display" id="service7"></span></td>
+                  <td><span class="json-display" id="price7"></span></td>
+              </tr>
+              <tr>
+                  <td><span class="json-display" id="service8"></span></td>
+                  <td><span class="json-display" id="price8"></span></td>
+              </tr>
+              <tr>
+                  <td><span class="json-display" id="service9"></span></td>
+                  <td><span class="json-display" id="price9"></span></td>
+              </tr>
+              <tr>
+                  <td><span class="json-display" id="service10"></span></td>
+                  <td><span class="json-display" id="price10"></span></td>
+              </tr>
+            </table>
+            <img src="images/bike-repair.jpg">
+        </article>
+    </main>
+    <footer>
+        <aside>
+            The Mountain Spoke <br>
+            3950 Valley Commons Drive <br>
+            Bozeman, MT 83454 <br>
+            (406) 409-2273 <br>
+            contact@mountainspoke.com
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span> | <a href="resources.html">Resources</a></p>
+    </footer>
+
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/current-date.js"></script>
+    <script src="scripts/loadservices.js"></script>
+    
+
+    
+</body>
+</html>

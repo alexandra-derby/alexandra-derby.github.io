@@ -1,0 +1,30 @@
+{
+  "services" : [
+  {
+    "service1": "Tire or tube install",
+    "service2": "Wheel build",
+    "service3": "Hub overhaul",
+    "service4": "Brake adjustment",
+    "service5": "Brake bleed",
+    "service6": "Gear adjustment",
+    "service7": "Chain installation",
+    "service8": "Bar tape installation",
+    "service9": "Bike boxing",
+    "service10": "General repairs"
+    
+  },
+  {
+    "price1": "$12.00",
+    "price2": "$30-$50.00",
+    "price3": "$30.00",
+    "price4": "$15.00",
+    "price5": "$30.00",
+    "price6": "$15.00",
+    "price7": "$10.00",
+    "price8": "$10.00",
+    "price9": "$55.00",
+    "price10": "$60.00/hr"
+    
+  }
+ ]
+}
