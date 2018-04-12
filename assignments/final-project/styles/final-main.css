@@ -209,7 +209,7 @@ input[type="submit"] {
     max-width: 100%;
 }
 .article-flex img {
-    max-height: 200px;
+    max-width: 400px;
 }
 form {
 	margin: auto;
@@ -236,4 +236,11 @@ table, th, td {
 }
 th, td {
     padding: 6px;
+}
+.calltoaction {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.calltoaction > a:hover {
+    color: red;
 }

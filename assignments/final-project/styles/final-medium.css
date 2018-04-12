@@ -4,7 +4,7 @@
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
 
 * { box-sizing: border-box; }  /* This wildcard applies to all elements ensuring a box layout model */
-
+z
 header, nav, main, footer {
     width: auto;
     min-width: 732px;
