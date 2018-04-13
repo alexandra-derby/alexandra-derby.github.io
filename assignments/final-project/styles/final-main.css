@@ -23,6 +23,7 @@
 }
 .navigation.responsive li a:hover { 
     background-color: red; 
+    color: black;
 }
 }
 
@@ -32,6 +33,9 @@ body {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif, ariel; 
     background-color: #FFFFFF;
+}
+body p {
+    font-size: 12px;
 }
 header, nav, main, footer {
     margin: 1px 5px 1px 5px;
@@ -219,15 +223,16 @@ form {
 }
 .small-img {
     max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 #accordion p {
     margin-bottom: 15px;
+    text-align: center;
 }
 .contact-info {
     text-align: center;
-}
-main figure img {
-    max-width: 100%;
 }
 table, th, td {
     border: 1px solid black;
@@ -241,6 +246,25 @@ th, td {
     background-color: #000000;
     color: #FFFFFF;
 }
-.calltoaction > a:hover {
-    color: red;
+article p {
+    text-align: center;
 }
+.servicesimg {
+    display: block;
+    margin-top: 0;
+}
+.widthcontrol {
+    max-width: 100%;
+}
+#middlecenter {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: auto;
+}
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+    

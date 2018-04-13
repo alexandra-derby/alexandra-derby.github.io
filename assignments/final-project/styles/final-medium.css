@@ -4,15 +4,15 @@
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
 
 * { box-sizing: border-box; }  /* This wildcard applies to all elements ensuring a box layout model */
-z
+
 header, nav, main, footer {
     width: auto;
     min-width: 732px;
-    max-width: 938px;
+    max-width: 1023px;
 }  
 nav button { display:none; }  /* hamburger button does not need to be shown */
 body {
-    font-size: 18px;
+    font-size: 20px;
     margin:auto;
 }
 li a:hover { 
@@ -76,8 +76,10 @@ main h2 {
 }
 article p {
     justify-content: center;
-    font-size: 20px;
-    margin: 10px;
+    font-size: 19px;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+    
 }
 aside {
     font-size: 15px;
@@ -90,27 +92,24 @@ footer {
     padding-bottom: 1px;
     margin: 10px;
 }
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-	margin:0 10px 0 10px;
-	grid-column-gap: 3%;
-	grid-row-gap: 10px;
-    text-align: center;
-}
-.gridimg {
-    width:100%;
-}
-.gridfig img {
-	height:320px;
-    max-width: 100%;
-}
 .article-flex {
     display: flex;
     justify-content: space-between;
     margin: 0 50px 20px 50px;
     text-align: center;
 }  
+.article-flex img {
+    max-width: 350px;
+}
+.reverse-flex img {
+    max-width: 350px;
+    }
+.reverse-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 50px 20px 50px;
+    text-align: center;
+}
 form {
 	margin: auto;
 }
@@ -125,18 +124,26 @@ footer a:hover {
     color: red;
 }
 main figure img {
-    display: flex;
-    max-width: 100%;
-    justify-content: center;
-}
+    display: block;
+    margin: auto;
+    max-width: 400px;
+    }
 article img {
     width: inherit;
     margin-top: 50px;
 }
-article p {
-    text-align: center;
-}
 .img-size {
-    max-width: 100%;
-    }
+    display: flex;
+    justify-content: center;
+    max-width: 75%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+fieldset {
+    20px 30% 0 30%;
+}
+.widthcontrol {
+    display: none;
+}
+body p { font-size: 16px}
 }

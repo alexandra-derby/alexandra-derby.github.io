@@ -1,0 +1,97 @@
+@media only screen and (min-width: 64em) {
+    
+header, nav, main, footer, body {
+    min-width: 1024px;
+    max-width: 2560px;
+}
+header {
+    margin: 10px;
+    padding: 5px 0 0 0;  
+    width: auto;
+}
+header h1 {
+    font-size: 50px;
+}
+header .subheading {
+    font-family: 'Open Sans', ariel, sans-serif;
+    font-size: 25px;
+    top: -30px;
+    margin-left: 15px;
+}
+#logo {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 125px;
+}
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+nav {
+    position: relative;
+    top: -345px;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 0px;
+}
+main h2 {
+    display: flex;
+    padding-left: 40px;
+    justify-content: center;
+    text-align: center;
+}  
+table, th, td {
+    border: 1px solid black;
+    text-align: center;    
+    margin: 0 auto;
+    font-size: 20px;
+}
+th, td {
+    padding: 10px;
+}
+article p {
+    font-size: 20px;
+    margin: 20px 50px 20px 50px;
+}
+aside {
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+footer {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 1px;
+}
+form {
+	margin: auto;
+    max-width: 800px;
+}
+label {
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+main h2 {
+    padding-left: 0;
+}
+#flex-parent1 {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+#para-width {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+}
+#p-max {
+    max-width: 700px;
+    margin: 0 auto;
+}
+#middlecenter {
+        max-width: 90%;
+}
+}
