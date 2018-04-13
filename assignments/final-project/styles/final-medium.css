@@ -138,11 +138,11 @@ article img {
     margin-top: 5px;
 }
 fieldset {
-    20px 30% 0 30%;
+    margin: 20px 30% 0 30%;
 }
 .widthcontrol {
     display: none;
 }
 body p { font-size: 16px}
-}
+
 
