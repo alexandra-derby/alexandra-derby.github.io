@@ -10,7 +10,6 @@
     <link href="styles/final-main.css" rel="stylesheet">
     <link href="styles/final-medium.css" rel="stylesheet">
     <link href="styles/final-large.css" rel="stylesheet">
-
 </head>
 <body>
     <header>
@@ -20,13 +19,13 @@
     </header>
     <nav class="fixed-nav-bar large-nav">
         <button class="hamburger" onclick="toggleHam()">&#9776;</button>
-        <ul class="navigation">
-            <li class="togglenav pipe"><a href="index.html" title="Home">Home</a></li>
-            <li class="togglenav pipe"><a href="tours.html" title="Adventures">Adventure Tours</a></li>
-            <li class="togglenav pipe"><a href="events.html" title="Events">Events</a></li>
-            <li class="togglenav pipe"><a href="sales.html" title="Sales">Sales</a></li>
-            <li class="togglenav pipe"><a href="services.html" title="Services">Services</a></li>
-            <li class="togglenav lastPipe"><a href="contact.html" title="Contact"> Contact</a></li>
+        <ul class="navigation" id="navigation1">
+            <li class="togglenav" id="pipe"><a href="index.html" title="Home">Home</a></li>
+            <li class="togglenav" id="pipe"><a href="tours.html" title="Adventures">Adventure Tours</a></li>
+            <li class="togglenav" id="pipe"><a href="events.html" title="Events">Events</a></li>
+            <li class="togglenav" id="pipe"><a href="sales.html" title="Sales">Sales</a></li>
+            <li class="togglenav"id="pipe"><a href="services.html" title="Services">Services</a></li>
+            <li class="togglenav"id="lastPipe"><a href="contact.html" title="Contact"> Contact</a></li>
         </ul>		
     </nav>
     <main>
@@ -73,11 +72,8 @@
         </aside>
         <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span> | <a href="resources.html">Resources</a> | <a href="video.html">Video</a></p>
     </footer>
-
-
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/current-date.js"></script>
-
-    
+    <script src="scripts/wayfinding.js"></script> 
 </body>
 </html>

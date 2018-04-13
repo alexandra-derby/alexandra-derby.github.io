@@ -270,4 +270,9 @@ footer a {
 .calltoaction:hover {
     background-color: red;
 }
-    
+.active {
+    background-color: red;
+}
+video {
+    max-width: 100%;
+}

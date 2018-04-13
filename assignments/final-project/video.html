@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Video - Mountain Spoke</title>
+    <meta name="author" content="Alexandra Derby">
+    <meta name="description" content="The Mountain Spoke Video Page">    
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/final-main.css" rel="stylesheet">
+    <link href="styles/final-medium.css" rel="stylesheet">
+    <link href="styles/final-large.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="The-site-logo" id="logo">
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">Faster than the Rest.</div>
+    </header>
+    <nav class="fixed-nav-bar large-nav">
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <ul class="navigation" id="navigation1">
+            <li class="togglenav" id="pipe"><a href="index.html" title="Home">Home</a></li>
+            <li class="togglenav" id="pipe"><a href="tours.html" title="Adventures">Adventure Tours</a></li>
+            <li class="togglenav" id="pipe"><a href="events.html" title="Events">Events</a></li>
+            <li class="togglenav" id="pipe"><a href="sales.html" title="Sales">Sales</a></li>
+            <li class="togglenav"id="pipe"><a href="services.html" title="Services">Services</a></li>
+            <li class="togglenav"id="lastPipe"><a href="contact.html" title="Contact"> Contact</a></li>
+        </ul>		
+    </nav>
+    <main>
+        <video>
+            <source src="images/alexdvideo.mp4" type="video/mp4">
+``      </video>
+    </main>
+    <footer>
+        <aside>
+            The Mountain Spoke <br>
+            3950 Valley Commons Drive <br>
+            Bozeman, MT 83454 <br>
+            (406) 409-2273 <br>
+            contact@mountainspoke.com
+        </aside>
+         <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span> | <a href="resources.html">Resources</a> | <a href="video.html">Video</a></p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/current-date.js"></script>
+</body>
+</html>
